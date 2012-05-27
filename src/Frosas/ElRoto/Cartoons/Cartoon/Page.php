@@ -1,6 +1,6 @@
 <?php
 
-namespace Frosas\ElRoto\Strips\Strip;
+namespace Frosas\ElRoto\Cartoons\Cartoon;
 
 use Symfony\Component\DomCrawler\Crawler;
 

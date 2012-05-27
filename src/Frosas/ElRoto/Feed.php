@@ -4,11 +4,11 @@ namespace Frosas\ElRoto;
 
 class Feed
 {
-    private $strips;
+    private $cartoons;
     
-    function __construct(Strips $strips)
+    function __construct(Cartoons $cartoons)
     {
-        $this->strips = $strips;
+        $this->cartoons = $cartoons;
     }
     
     function build()
@@ -19,9 +19,9 @@ class Feed
         $channel = $feed->addChild('channel');
         $channel->addChild('title', "El Roto");
         $channel->addChild('description', "Las viñetas de El Roto en El País");
-        $channel->addChild('link', $this->strips->url());
+        $channel->addChild('link', $this->cartoons->url());
         
-        if ($last = $this->strips->last()) {
+        if ($last = $this->cartoons->last()) {
             $item = $channel->addChild('item');
             $item->addChild('title', $last->title());
             $item->addChild('link', $last->url());

@@ -1,8 +1,8 @@
 <?php
 
-namespace Frosas\ElRoto\Strips;
+namespace Frosas\ElRoto\Cartoons;
 
-use Frosas\ElRoto\Strips\Strip\Page;
+use Frosas\ElRoto\Cartoons\Cartoon\Page;
 
 class Feed
 {
