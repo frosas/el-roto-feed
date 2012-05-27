@@ -1,5 +1,5 @@
 {
-    "hash": "6e407962d9fb4a9c306ad7e75da6ac96",
+    "hash": "14c2b0a44d943124dcf7085f6ea3dadf",
     "packages": [
         {
             "package": "pimple/pimple",
@@ -140,6 +140,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silex/silex": 20
+        "silex/silex": 20,
+        "symfony/css-selector": 20,
+        "symfony/dom-crawler": 20
     }
 }
