@@ -14,17 +14,12 @@ class Feed
         $this->rss = new \SimpleXMLElement($content);
     }
     
-    function lastStripPage()
-    {
-        if ($item = $this->lastItem()) return new Page($item);
-    }
-    
     function siteUrl()
     {
         return (string) $this->rss->channel->link;
     }
     
-    private function lastItem()
+    function lastItem()
     {
         foreach ($this->rss->channel->item as $item) {
             if (preg_match('/El Roto/i', (string) $item->title)) {

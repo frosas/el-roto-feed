@@ -6,42 +6,22 @@ use Symfony\Component\DomCrawler\Crawler;
 
 class Page
 {
-    private $feedItem;
     private $crawler;
     
-    function __construct(\SimpleXMLElement $feedItem)
+    function __construct($url)
     {
-        $this->feedItem = $feedItem;
-    }
-    
-    function url()
-    {
-        return (string) $this->feedItem->link;
+        $content = file_get_contents($url);
+        $this->crawler = new Crawler(null, $url);
+        $this->crawler->addHtmlContent($content);
     }
     
     function title()
     {
-        return $this->crawler()->filter('.article .antetitulo')->text();
+        return $this->crawler->filter('.article .antetitulo')->text();
     }
     
     function imageUrl()
     {
         return $this->crawler->filter('.article img')->attr('src');
-    }
-    
-    function created()
-    {
-        return strtotime((string) $this->feedItem->pubDate);
-    }
-    
-    private function crawler()
-    {
-        if (! $this->crawler) {
-            $content = file_get_contents($this->url());
-            $this->crawler = new Crawler(null, $this->url());
-            $this->crawler->addHtmlContent($content);
-        }
-        
-        return $this->crawler;
     }
 }

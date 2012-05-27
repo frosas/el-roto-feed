@@ -6,21 +6,23 @@ use Frosas\ElRoto\Strips\Strip\Page;
 
 class Strip
 {
+    private $feedItem;
     private $page;
     
-    function __construct(Page $page)
+    function __construct(\SimpleXMLElement $feedItem)
     {
-        $this->page = $page;
+        $this->feedItem = $feedItem;
+        $this->page = new Page($this->url());
+    }
+    
+    function url()
+    {
+        return (string) $this->feedItem->link;
     }
     
     function title()
     {
         return $this->page->title();
-    }
-    
-    function url()
-    {
-        return $this->page->url();
     }
     
     function imageUrl()
@@ -30,6 +32,6 @@ class Strip
     
     function created()
     {
-        return $this->page->created();
+        return strtotime((string) $this->feedItem->pubDate);
     }
 }

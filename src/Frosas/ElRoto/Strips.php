@@ -16,7 +16,7 @@ class Strips
     
     function last()
     {
-        if ($page = $this->feed->lastStripPage()) return new Strip($page);
+        if ($lastItem = $this->feed->lastItem()) return new Strip($lastItem);
     }
     
     function url()
