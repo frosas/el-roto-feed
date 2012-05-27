@@ -22,7 +22,9 @@ class Strip
     
     function title()
     {
-        return $this->page->title();
+        $title = $this->page->title();
+        $date = date('d/m/Y', $this->created());
+        return $title ? "$title ($date)" : $date;
     }
     
     function imageUrl()
