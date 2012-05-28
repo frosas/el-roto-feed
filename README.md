@@ -1,2 +1,2 @@
-- As [feed](http://elroto.frosas.net/feed)
-- At [Twitter](https://twitter.com/VinetaElRoto)
+- Feed: http://elroto.frosas.net/feed
+- Twitter: https://twitter.com/VinetaElRoto
