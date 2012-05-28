@@ -17,7 +17,9 @@ class Page
     
     function title()
     {
-        return $this->crawler->filter('.article .antetitulo')->text();
+        if (count($titleNode = $this->crawler->filter('.article .antetitulo'))) {
+            return $titleNode->text();
+        }
     }
     
     function imageUrl()
