@@ -3,9 +3,9 @@
         "psr-0": {"": "src"}
     },
     "require": {
-        "silex/silex": "dev-master",
-        "symfony/css-selector": "dev-master",
-        "symfony/dom-crawler": "dev-master",
-        "frosas/misc": "dev-master"
+        "silex/silex": "1.0.*",
+        "symfony/css-selector": "2.*",
+        "symfony/dom-crawler": "2.*",
+        "frosas/misc": "1.*"
     }
 }
