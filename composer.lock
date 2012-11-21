@@ -1,68 +1,67 @@
 {
-    "hash": "858c9b1a3d89bace8c15ca8388687240",
+    "hash": "8b8ff7196283399e26da34be18f69b57",
     "packages": [
         {
             "name": "frosas/misc",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/frosas/php-misc",
-                "reference": "4f355a863f09a80f9cb6d77b6f3060859a0d59ba"
+                "reference": "1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/frosas/php-misc/zipball/4f355a863f09a80f9cb6d77b6f3060859a0d59ba",
-                "reference": "4f355a863f09a80f9cb6d77b6f3060859a0d59ba",
+                "url": "https://github.com/frosas/php-misc/zipball/1.0.1",
+                "reference": "1.0.1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "2012-10-06 22:02:08",
+            "time": "2012-10-24 19:35:06",
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Frosas\\Misc": "src"
                 }
             },
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Francesc Rosàs",
                     "email": "francescrosasbosque@gmail.com"
                 }
             ],
-            "description": "Some miscelaneous utils to work with collections, strings, HTML, functions, errors, ..."
+            "description": "A bunch of classes and functions to make working with PHP easier"
         },
         {
             "name": "pimple/pimple",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Pimple.git",
-                "reference": "b9f27b8dc18c08f00627dec02359b46a24791dc3"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Pimple/zipball/b9f27b8dc18c08f00627dec02359b46a24791dc3",
-                "reference": "b9f27b8dc18c08f00627dec02359b46a24791dc3",
+                "url": "https://github.com/fabpot/Pimple/zipball/v1.0.0",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
+            "time": "2012-05-08 06:57:24",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.0.x-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Pimple": "lib/"
@@ -82,8 +81,7 @@
             "keywords": [
                 "dependency injection",
                 "container"
-            ],
-            "time": "2012-09-10 12:09:48"
+            ]
         },
         {
             "name": "silex/silex",
@@ -266,17 +264,17 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "2.1.x-dev",
+            "version": "v2.1.3",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher",
-                "reference": "fb273317c0505ba657aa3d727530d36ae671fb82"
+                "reference": "v2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/EventDispatcher/zipball/fb273317c0505ba657aa3d727530d36ae671fb82",
-                "reference": "fb273317c0505ba657aa3d727530d36ae671fb82",
+                "url": "https://github.com/symfony/EventDispatcher/zipball/v2.1.3",
+                "reference": "v2.1.3",
                 "shasum": ""
             },
             "require": {
@@ -289,13 +287,14 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/http-kernel": "2.1.*"
             },
+            "time": "2012-10-04 08:17:57",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.1-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\EventDispatcher": ""
@@ -315,35 +314,34 @@
                 }
             ],
             "description": "Symfony EventDispatcher Component",
-            "homepage": "http://symfony.com",
-            "time": "2012-10-04 15:17:57"
+            "homepage": "http://symfony.com"
         },
         {
             "name": "symfony/http-foundation",
-            "version": "2.1.x-dev",
+            "version": "v2.1.3",
             "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation",
-                "reference": "5f18e1d5b901b320d05230aa91934e7d81f64bb4"
+                "reference": "v2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpFoundation/zipball/5f18e1d5b901b320d05230aa91934e7d81f64bb4",
-                "reference": "5f18e1d5b901b320d05230aa91934e7d81f64bb4",
+                "url": "https://github.com/symfony/HttpFoundation/zipball/v2.1.3",
+                "reference": "v2.1.3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2012-10-06 19:54:37",
+            "time": "2012-10-20 00:10:30",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.1-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\HttpFoundation": "",
@@ -368,17 +366,17 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "2.1.x-dev",
+            "version": "v2.1.3",
             "target-dir": "Symfony/Component/HttpKernel",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel",
-                "reference": "676a7bb2c6c4d5669ca073cceae3ac393748752a"
+                "reference": "v2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpKernel/zipball/676a7bb2c6c4d5669ca073cceae3ac393748752a",
-                "reference": "676a7bb2c6c4d5669ca073cceae3ac393748752a",
+                "url": "https://github.com/symfony/HttpKernel/zipball/v2.1.3",
+                "reference": "v2.1.3",
                 "shasum": ""
             },
             "require": {
@@ -404,14 +402,14 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/finder": "2.1.*"
             },
-            "time": "2012-10-06 19:54:37",
+            "time": "2012-10-30 01:14:14",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.1-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\HttpKernel": ""
@@ -435,17 +433,17 @@
         },
         {
             "name": "symfony/routing",
-            "version": "2.1.x-dev",
+            "version": "v2.1.3",
             "target-dir": "Symfony/Component/Routing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing",
-                "reference": "0443e2f9a10f49cac77128eb7f11d055fcf4db9d"
+                "reference": "v2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Routing/zipball/0443e2f9a10f49cac77128eb7f11d055fcf4db9d",
-                "reference": "0443e2f9a10f49cac77128eb7f11d055fcf4db9d",
+                "url": "https://github.com/symfony/Routing/zipball/v2.1.3",
+                "reference": "v2.1.3",
                 "shasum": ""
             },
             "require": {
@@ -458,17 +456,18 @@
                 "doctrine/common": ">=2.2,<2.4-dev"
             },
             "suggest": {
-                "doctrine/common": ">=2.2,<2.4-dev",
                 "symfony/config": "2.1.*",
-                "symfony/yaml": "2.1.*"
+                "symfony/yaml": "2.1.*",
+                "doctrine/common": ">=2.2,<2.4-dev"
             },
+            "time": "2012-10-26 02:26:42",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.1-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Routing": ""
@@ -488,8 +487,7 @@
                 }
             ],
             "description": "Symfony Routing Component",
-            "homepage": "http://symfony.com",
-            "time": "2012-10-04 15:17:57"
+            "homepage": "http://symfony.com"
         }
     ],
     "packages-dev": null,
